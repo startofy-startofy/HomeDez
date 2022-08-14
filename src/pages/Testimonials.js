@@ -22,7 +22,7 @@ const Testimonials = () => {
                 />
                 <div class="flex flex-wrap justify-center">
                   <div class="grow-0 shrink-0 basis-auto w-full lg:w-8/12 px-3">
-                    <h5 class="text-4xl font-bold mb-3 ">Amruta Pandey</h5>
+                    <h5 class="text-4xl font-bold mb-3 ">Amruta Pande</h5>
                     <p class="text-gray-500 mb-6 text-xl">
                       <svg
                         aria-hidden="true"
