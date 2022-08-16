@@ -2,11 +2,11 @@ import React from "react";
 
 const GalleryCard = (props) => {
   return (
-    <div class="w-full p-2 rounded-xl lg:w-1/3 md:w-1/2 overflow-hidden">
+    <div class="md:p-2 rounded-xl overflow-hidden">
       <img
         src={props.imglink}
         alt=""
-        className="rounded-xl h-[350px] w-[450px] hover:scale-125 transition delay-250"
+        className="rounded-xl w-[230px] h-[230px] md:h-[350px] md:w-[350px] hover:scale-125 transition delay-250"
       />
     </div>
   );
