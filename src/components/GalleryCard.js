@@ -2,7 +2,7 @@ import React from "react";
 
 const GalleryCard = (props) => {
   return (
-    <div class="md:p-2 rounded-xl overflow-hidden">
+    <div className="md:p-2 rounded-xl overflow-hidden">
       <img
         src={props.imglink}
         alt=""

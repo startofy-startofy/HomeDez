@@ -28,7 +28,7 @@ const Gallery = () => {
           <h1 className="text-6xl md:text-6xl">Gallery</h1>
           <div className="pt-12">
             <div className="pb-12">
-            <select class="text-lg font-bold rounded-xl border-2 border-[#2a201f] text-gray-600 h-12 w-80 pl-5 pr-10 bg-white hover:border-[#facf30] focus:outline-none cursor-pointer" onChange={set} value={selectedOption}>
+            <select className="text-lg font-bold rounded-xl border-2 border-[#2a201f] text-gray-600 h-12 w-80 pl-5 pr-10 bg-white hover:border-[#facf30] focus:outline-none cursor-pointer" onChange={set} value={selectedOption}>
               <option value='bed'>Bedroom Top</option>
               <option value='kit'>Kitchen Top</option>
               <option value='liv'>Living Top</option>
@@ -38,7 +38,7 @@ const Gallery = () => {
             </select>
             </div>
 
-            <div class="grid-flow-row-dense px-3 md:w-8/12 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mx-auto">
+            <div className="grid-flow-row-dense px-3 md:w-8/12 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mx-auto">
               {
               topmap[selectedOption].map((data, i) => {
                 return <GalleryCard key={i} imglink={data} />;
