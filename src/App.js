@@ -7,6 +7,9 @@ import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import {NotificationContainer} from 'react-notifications';
 import 'react-notifications/lib/notifications.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 function App() {
   return (

@@ -2,7 +2,7 @@ import React from "react";
 
 const GalleryCard = (props) => {
   return (
-    <div className="md:p-2 rounded-xl overflow-hidden">
+    <div data-aos="fade-up" className="md:p-2 rounded-xl overflow-hidden">
       <img
         src={props.imglink}
         alt=""

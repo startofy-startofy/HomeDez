@@ -5,7 +5,7 @@ const Testimonials = () => {
   return (
     <>
       <div id="tests" className="text-center bg-slate-200 py-14 md:py-20">
-        <h1 className="text-6xl">Customer Testimonials</h1>
+        <h1 data-aos="fade-up" className="text-6xl">Customer Testimonials</h1>
         <div className="px-2 md:px-0 md:w-7/12 mx-auto pt-14">
           <div
             id="carouselExampleCaptions"
@@ -15,12 +15,13 @@ const Testimonials = () => {
             <div className="carousel-inner relative w-full overflow-hidden">
               <div className="carousel-item active relative float-left w-full">
                 <img
+                data-aos="fade-up"
                   className="rounded-full shadow-lg mb-6 mx-auto"
                   src={place}
                   alt="avatar"
                   style={{ width: "150px" }}
                 />
-                <div className="flex flex-wrap justify-center">
+                <div data-aos="fade-up" className="flex flex-wrap justify-center">
                   <div className="grow-0 shrink-0 basis-auto w-full lg:w-8/12 px-3">
                     <h5 className="text-4xl font-bold mb-3 ">Amruta Pande</h5>
                     <p className="text-gray-500 mb-6 md:text-xl text-lg">
