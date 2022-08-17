@@ -5,6 +5,8 @@ import Gallery from "./pages/Gallery";
 import Testimonials from "./pages/Testimonials";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
+import {NotificationContainer} from 'react-notifications';
+import 'react-notifications/lib/notifications.css';
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
       <Contact />
 
       <Footer />
+      <NotificationContainer/>
     </>
   );
 }

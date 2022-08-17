@@ -22,12 +22,13 @@ const Gallery = () => {
 
   return (
     <>
-      <div className="h-auto text-center py-14 md:py-20">
+
+      <div id="gallery" className="h-auto text-center py-14 md:py-20">
         <div className="">
           <h1 className="text-6xl md:text-6xl">Gallery</h1>
           <div className="pt-12">
             <div className="pb-12">
-            <select class="text-lg font-bold rounded-xl border-2 border-[#2a201f] text-gray-600 h-12 w-80 pl-5 pr-10 bg-white hover:border-[#facf30] focus:outline-none" onChange={set} value={selectedOption}>
+            <select class="text-lg font-bold rounded-xl border-2 border-[#2a201f] text-gray-600 h-12 w-80 pl-5 pr-10 bg-white hover:border-[#facf30] focus:outline-none cursor-pointer" onChange={set} value={selectedOption}>
               <option value='bed'>Bedroom Top</option>
               <option value='kit'>Kitchen Top</option>
               <option value='liv'>Living Top</option>
@@ -47,6 +48,7 @@ const Gallery = () => {
           </div>
         </div>
       </div>
+
     </>
   );
 };

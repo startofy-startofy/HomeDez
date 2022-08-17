@@ -6,7 +6,7 @@ import ceil from "../assets/services/ceil.jpeg";
 const Services = () => {
   return (
     <>
-      <div className="text-center h-auto py-14 md:py-20 bg-slate-100">
+      <div id="services" className="text-center h-auto py-14 md:py-20 bg-slate-100">
         <div className="p-4 md:w-7/12 mx-auto">
           <h1 className="text-6xl md:text-6xl pb-10">Our Services</h1>
           <p className="md:text-2xl text-xl">
@@ -16,8 +16,8 @@ const Services = () => {
             including
           </p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 place-content-stretch content-end items-center md:w-9/12 md:gap-x-36 mx-auto pt-20">
-          <div className="md:w-64 w-36 pb-8 md:pb-0">
+        <div className="grid grid-cols-2 md:grid-cols-4 text-center items-center md:w-9/12 md:gap-x-36 content-center mx-auto pt-20 place-items-center">
+          <div className="md:w-64 w-44 pb-8 md:pb-0 text-center">
             <div className="h-36 w-44 md:h-48 md:w-64 shadow-xl rounded-xl bg-white">
               <lottie-player
                 src="https://assets6.lottiefiles.com/packages/lf20_QDchDS.json"
@@ -30,19 +30,19 @@ const Services = () => {
             </div>
             <h1 className="text-xl md:text-2xl pt-4">Interior design</h1>
           </div>
-          <div className="md:w-64 w-36 pb-8 md:pb-0">
+          <div className="md:w-64 w-44 pb-8 md:pb-0">
             <div className="h-36 w-44 md:h-48 md:w-64 shadow-xl rounded-xl bg-white">
               <img src={carp} alt="" className="h-36 w-44 md:h-48 md:w-64 rounded-xl" />
             </div>
             <h1 className="text-xl md:text-2xl pt-4">Carpentry</h1>
           </div>
-          <div className="md:w-64 w-36 pb-8 md:pb-0">
+          <div className="md:w-64 w-44 pb-8 md:pb-0">
             <div className="h-36 w-44 md:h-48 md:w-64 shadow-xl rounded-xl bg-white">
               <img src={ceil} alt="" className="h-36 w-44 md:h-48 md:w-64 rounded-xl" />
             </div>
             <h1 className="text-xl md:text-2xl pt-4">False Ceiling</h1>
           </div>
-          <div className="md:w-64 w-36 pb-8 md:pb-0">
+          <div className="md:w-64 w-44 pb-8 md:pb-0">
             <div className="h-36 w-44 md:h-48 md:w-64 shadow-xl rounded-xl bg-white">
               <lottie-player
                 src="https://assets6.lottiefiles.com/packages/lf20_geumvtzy.json"
@@ -57,8 +57,8 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 md:w-7/12 mx-auto place-content-evenly md:gap-x-36 md:pt-20">
-          <div className="md:w-64 w-36 pb-8 md:pb-0">
+        <div className="grid grid-cols-2 md:grid-cols-3 md:w-7/12 mx-auto place-items-center md:gap-x-36 md:pt-20">
+          <div className="md:w-64 w-44 pb-8 md:pb-0 text-center ">
             <div className="h-36 w-44 md:h-48 md:w-64 shadow-xl rounded-xl text-center bg-white">
               <lottie-player
                 src="https://assets3.lottiefiles.com/packages/lf20_b3a1wyt0.json"
@@ -72,7 +72,7 @@ const Services = () => {
             <h1 className="text-xl md:text-2xl pt-4">Electrical & lighting</h1>
           </div>
 
-          <div className="md:w-64 w-36 pb-8 md:pb-0">
+          <div className="md:w-64 w-44 pb-8 md:pb-0">
             <div className="h-36 w-44 md:h-48 md:w-64 shadow-xl rounded-xl text-center bg-white">
               <lottie-player
                 src="https://assets10.lottiefiles.com/packages/lf20_jlthamnp.json"
@@ -86,7 +86,7 @@ const Services = () => {
             <h1 className="text-xl md:text-2xl pt-4">Gas piping</h1>
           </div>
 
-          <div className="md:w-64 w-36 pb-8 md:pb-0">
+          <div className="md:w-64 w-44 pb-8 md:pb-0 col-span-2 md:col-span-1">
             <div className="h-36 w-44 md:h-48 md:w-64 shadow-xl rounded-xl text-center bg-white">
               <lottie-player
                 src="https://assets8.lottiefiles.com/packages/lf20_jCmeIg.json"

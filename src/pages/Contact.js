@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-// import axios from "axios";
+import axios from "axios";
+import { NotificationManager } from "react-notifications";
 
 const Contact = React.forwardRef((props, ref) => {
   const [name, setName] = useState();
@@ -7,30 +8,44 @@ const Contact = React.forwardRef((props, ref) => {
   const [message, setMessage] = useState();
   const [phone, setPhone] = useState();
   const [status, setStatus] = useState(false);
-//   const url = 'https://ieeecspesu.herokuapp.com'
+  const url = "https://homedez.herokuapp.com";
   const submitForm = (e) => {
     e.preventDefault();
     const dat = {
       name,
       email,
       message,
-      phone
+      phone,
     };
-    console.log(dat)
-    
-    // axios.post(`${url}/contactemail`, dat);
-    // setName();
-    // setEmail();
-    // setMessage();
-    setStatus(true);
-    e.target.reset();
+    console.log(dat);
+
+    axios
+      .post(`${url}/contactemail`, dat)
+      .then((res) => {
+        setName();
+        setEmail();
+        setMessage();
+        setStatus(true);
+        NotificationManager.success(
+          "Be assured, we will make your home your own with the best service, we will get back you shortly",
+          "Message Sent"
+        );
+        e.target.reset();
+      })
+      .catch((e) => {
+        NotificationManager.error(
+          "Something went wrong, Please try again",
+          "Error"
+        );
+      });
   };
   return (
     <>
       <div
+        id="contact"
         data-aos-delay="100"
         ref={ref}
-        className="h-auto pt-12 pb-12 bg-slate-100"
+        className="h-auto md:pt-12 pb-12 bg-slate-100"
       >
         <div
           data-aos="fade-up"
@@ -42,9 +57,17 @@ const Contact = React.forwardRef((props, ref) => {
                 Contact Us
               </h2>
               <div className="text-xl text-gray-700 mt-8">
-              Submit your requirement
+                Submit your requirement
               </div>
-              <h1 className="text-lg pt-6">Our Email - <span className="text-2xl">homedez4u@gmail.com</span> </h1>
+              <h1 className="text-lg pt-6">
+                Our Email -{" "}
+                <span className="text-2xl">
+                  {" "}
+                  <a href="mailto:homedez4u@gmail.com" className="underline">
+                    homedez4u@gmail.com
+                  </a>{" "}
+                </span>{" "}
+              </h1>
             </div>
             <div className="mt-8 text-center">
               <svg

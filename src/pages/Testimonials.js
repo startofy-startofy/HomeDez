@@ -4,7 +4,7 @@ import place from "../assets/place.jpeg"
 const Testimonials = () => {
   return (
     <>
-      <div className="text-center bg-slate-200 py-14 md:py-20">
+      <div id="tests" className="text-center bg-slate-200 py-14 md:py-20">
         <h1 className="text-6xl">Customer Testimonials</h1>
         <div className="px-2 md:px-0 md:w-7/12 mx-auto pt-14">
           <div

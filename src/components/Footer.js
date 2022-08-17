@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
@@ -17,6 +17,14 @@ const Footer = () => {
                 rel="noopener noreferrer"
               >
                 <FontAwesomeIcon icon={faInstagram} className="text-4xl" />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/homedezinteriors/"
+                className="pr-10 hover:text-[#facf30]"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon icon={faLinkedinIn} className="text-4xl" />
               </a>
               <a
                 href="mailto:homedez4u@gmail.com"

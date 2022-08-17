@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 import logo from "../assets/homedezlogo.png";
-// import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,58 +12,65 @@ function NavBar() {
           <div className="flex items-center justify-between h-20">
             <div className="flex items-end w-full justify-between">
               <div className="flex-shrink-0">
-                <img className="h-20" src={logo} alt="Workflow" />
+                <Link activeClass="" smooth spy to="home" className="">
+                  <img
+                    className="h-20 cursor-pointer"
+                    src={logo}
+                    alt="Workflow"
+                  />
+                </Link>
               </div>
               <div className="hidden md:block self-center">
                 <div className="ml-10 flex items-baseline space-x-4">
-                  <a
-                    // style={({ isActive }) => {
-                    //   return {
-                    //     backgroundColor: isActive ? "rgb(55 65 81)" : "",
-                    //     color: isActive ? "white" : "",
-                    //   };
-                    // }}
-                    href="/"
-                    className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-lg font-medium"
+                  <Link
+                    activeClass="underline decoration-[#facf30] decoration-[3px] underline-offset-[15px] text-[#facf30]"
+                    smooth
+                    spy
+                    to="home"
+                    className="text-white hover:underline decoration-[#facf30] decoration-4 underline-offset-[15px]  px-3 py-2 rounded-md text-lg font-medium cursor-pointer"
                   >
                     Home
-                  </a>
-                  <a
-                    // style={({ isActive }) => {
-                    //   return {
-                    //     backgroundColor: isActive ? "rgb(55 65 81)" : "",
-                    //     color: isActive ? "white" : "",
-                    //   };
-                    // }}
-                    href="/blog"
-                    className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-lg font-medium"
+                  </Link>
+                  <Link
+                    activeClass="underline decoration-[#facf30] decoration-[3px] underline-offset-[15px] text-[#facf30]"
+                    smooth
+                    spy
+                    offset={-100}
+                    to="services"
+                    className="text-white hover:underline decoration-[#facf30] decoration-4 underline-offset-[15px]  px-3 py-2 rounded-md text-lg font-medium cursor-pointer"
                   >
                     Services
-                  </a>
-                  <a
-                    // style={({ isActive }) => {
-                    //   return {
-                    //     backgroundColor: isActive ? "rgb(55 65 81)" : "",
-                    //     color: isActive ? "white" : "",
-                    //   };
-                    // }}
-                    href="/blog"
-                    className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-lg font-medium"
+                  </Link>
+                  <Link
+                    activeClass="underline decoration-[#facf30] decoration-[3px] underline-offset-[15px] text-[#facf30]"
+                    smooth
+                    spy
+                    to="gallery"
+                    offset={-100}
+                    className="text-white hover:underline decoration-[#facf30] decoration-4 underline-offset-[15px]  px-3 py-2 rounded-md text-lg font-medium cursor-pointer"
+                  >
+                    Gallery
+                  </Link>
+                  <Link
+                    activeClass="underline decoration-[#facf30] decoration-[3px] underline-offset-[15px] text-[#facf30]"
+                    smooth
+                    spy
+                    to="tests"
+                    offset={-120}
+                    className="text-white hover:underline decoration-[#facf30] decoration-4 underline-offset-[15px]  px-3 py-2 rounded-md text-lg font-medium cursor-pointer"
                   >
                     Testimonials
-                  </a>
-                  <a
-                    // style={({ isActive }) => {
-                    //   return {
-                    //     backgroundColor: isActive ? "rgb(55 65 81)" : "",
-                    //     color: isActive ? "white" : "",
-                    //   };
-                    // }}
-                    href="/contact"
-                    className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-lg font-medium"
+                  </Link>
+                  <Link
+                    activeClass="underline decoration-[#facf30] decoration-[3px] underline-offset-[15px] text-[#facf30]"
+                    smooth
+                    spy
+                    offset={-100}
+                    to="contact"
+                    className="text-white hover:underline decoration-[#facf30] decoration-4 underline-offset-[15px]  px-3 py-2 rounded-md text-lg font-medium cursor-pointer"
                   >
                     Contact Us
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -78,11 +85,11 @@ function NavBar() {
                 <span className="sr-only">Open main menu</span>
                 {!isOpen ? (
                   <svg
-                    className="block h-6 w-6"
+                    className="block h-6 w-6 text-[#C4A484]"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke="currentColor"
+                    stroke="#facf30"
                     aria-hidden="true"
                   >
                     <path
@@ -98,7 +105,7 @@ function NavBar() {
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke="currentColor"
+                    stroke="#C4A484"
                     aria-hidden="true"
                   >
                     <path
@@ -125,46 +132,61 @@ function NavBar() {
         >
           {
             <div className="md:hidden" id="mobile-menu">
-              <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-slate-200">
-                <a
-                //   onClick={() => setIsOpen(!isOpen)}
-                //   style={({ isActive }) => {
-                //     return {
-                //       backgroundColor: isActive ? "rgb(55 65 81)" : "",
-                //       color: isActive ? "white" : "",
-                //     };
-                //   }}
-                href="/"
-                  className="text-black hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-[#C4A484] text-center">
+                <Link
+                  onClick={() => setIsOpen(!isOpen)}
+                  activeClass="bg-slate-200"
+                  smooth
+                  spy
+                  to="home"
+                  className="text-black block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Home
-                </a>
-                <a
-                //   onClick={() => setIsOpen(!isOpen)}
-                //   style={({ isActive }) => {
-                //     return {
-                //       backgroundColor: isActive ? "rgb(55 65 81)" : "",
-                //       color: isActive ? "white" : "",
-                //     };
-                //   }}
-                href="/blog"
-                  className="text-black hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                </Link>
+                <Link
+                  onClick={() => setIsOpen(!isOpen)}
+                  activeClass="bg-slate-200"
+                  smooth
+                  spy
+                  offset={-90}
+                  to="services"
+                  className="text-black block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Blog
-                </a>
-                <a
-                //   onClick={() => setIsOpen(!isOpen)}
-                //   style={({ isActive }) => {
-                //     return {
-                //       backgroundColor: isActive ? "rgb(55 65 81)" : "",
-                //       color: isActive ? "white" : "",
-                //     };
-                //   }}
-                  href="/contact"
-                  className="text-black hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  Services
+                </Link>
+                <Link
+                  onClick={() => setIsOpen(!isOpen)}
+                  activeClass="bg-slate-200"
+                  smooth
+                  spy
+                  offset={-90}
+                  to="gallery"
+                  className="text-black block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  Gallery
+                </Link>
+                <Link
+                  onClick={() => setIsOpen(!isOpen)}
+                  activeClass="bg-slate-200"
+                  smooth
+                  spy
+                  offset={-90}
+                  to="tests"
+                  className="text-black block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  Testimonials
+                </Link>
+                <Link
+                  onClick={() => setIsOpen(!isOpen)}
+                  activeClass="bg-slate-200"
+                  smooth
+                  spy
+                  offset={-70}
+                  to="contact"
+                  className="text-black block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Contact Us
-                </a>
+                </Link>
               </div>
             </div>
           }
