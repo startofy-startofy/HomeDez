@@ -16,7 +16,7 @@ const Home = () => {
             <h1 className="text-[#facf30] text-7xl md:text-8xl pb-8">
               HomeDez
             </h1>
-            <h4 className="text-white text-4xl md:text-5xl pb-5">
+            <h4 className="text-white text-4xl md:text-4xl pb-5">
               Make Home Your Own With Us
             </h4>
             <p className="text-white text-lg pb-9">
