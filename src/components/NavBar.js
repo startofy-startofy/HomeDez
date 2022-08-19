@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
-import logo from "../assets/homedezlogo.png";
+// import logo from "../assets/homedezlogo.png";
+import logo from "../assets/homedezlogo2.jpg";
 import { Link } from "react-scroll";
 
 function NavBar() {
@@ -8,13 +9,13 @@ function NavBar() {
   return (
     <div>
       <nav className="z-10 w-full fixed bg-[#2a201f] shadow-2xl">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-0 py-2">
-          <div className="flex items-center justify-between h-20">
+        <div className="md:w-11/12 pr-6 md:pr-0 mx-auto md:px-4 lg:px-0 py-2">
+          <div className="flex items-center justify-between h-24">
             <div className="flex items-end w-full justify-between">
               <div className="flex-shrink-0">
                 <Link activeClass="" smooth spy to="home" className="">
                   <img
-                    className="h-20 cursor-pointer"
+                    className="h-24 w-48 cursor-pointer"
                     src={logo}
                     alt="Workflow"
                   />
