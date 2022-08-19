@@ -33,33 +33,33 @@ const Home = () => {
               to="contact"
               className="py-4 text-xl px-9 rounded-xl bg-[#facf30] font-bold cursor-pointer"
             >
-              Consult
+              Consult Us
             </Link>
           </div>
         </div>
         <div className="basis-7/12 text-center py-10">
           <div className="flex md:flex-row flex-col items-center">
             <div className="flex justify-evenly w-full md:w-auto pb-8 md:pb-0">
-              <div className="h-52 w-52 md:h-[450px] overflow-hidden md:w-[300px] md:mr-6 rounded-3xl">
+              <div className="h-52 w-52 md:h-[350px] overflow-hidden md:w-[300px] md:mr-6 rounded-3xl">
                 <img
                   src={p1}
                   alt="Norway"
-                  className="h-52 w-52 md:h-[450px] md:w-[300px] rounded-3xl hover:scale-125 transition delay-250"
+                  className="h-52 w-52 md:h-[350px] md:w-[300px] rounded-3xl hover:scale-125 transition delay-250"
                 />
               </div>
-              <div className="h-52 w-52 md:h-[450px] md:w-[300px] overflow-hidden md:mr-6 rounded-3xl">
+              <div className="h-52 w-52 md:h-[350px] md:w-[300px] overflow-hidden md:mr-6 rounded-3xl">
                 <img
                   src={p2}
                   alt="Norway"
-                  className="h-52 w-52 md:h-[450px] md:w-[300px] rounded-3xl hover:scale-125 transition delay-250"
+                  className="h-52 w-52 md:h-[350px] md:w-[300px] rounded-3xl hover:scale-125 transition delay-250"
                 />
               </div>
             </div>
-            <div className="h-52 w-52 md:h-[450px] md:w-[300px] overflow-hidden rounded-3xl">
+            <div className="h-52 w-52 md:h-[350px] md:w-[300px] overflow-hidden rounded-3xl">
               <img
                 src={p3}
                 alt="Norway"
-                className="h-52 w-52 md:h-[450px] md:w-[300px] rounded-3xl hover:scale-125 transition delay-250"
+                className="h-52 w-52 md:h-[350px] md:w-[300px] rounded-3xl hover:scale-125 transition delay-250"
               />
             </div>
           </div>
