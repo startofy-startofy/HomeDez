@@ -37,7 +37,6 @@ const Gallery = () => {
               <option value='ter'>Terrace</option>
             </select>
             </div>
-
             <div className="grid-flow-row-dense px-3 md:w-8/12 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mx-auto">
               {
               topmap[selectedOption].map((data, i) => {
@@ -48,7 +47,6 @@ const Gallery = () => {
           </div>
         </div>
       </div>
-
     </>
   );
 };
