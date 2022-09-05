@@ -1,7 +1,5 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { Instagram, LinkedIn, Email } from "@material-ui/icons";
 
 const Footer = () => {
   return (
@@ -16,7 +14,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FontAwesomeIcon icon={faInstagram} className="text-4xl" />
+                <Instagram style={{ fontSize: "45px" }} />
               </a>
               <a
                 href="https://www.linkedin.com/company/homedezinteriors/"
@@ -24,7 +22,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FontAwesomeIcon icon={faLinkedinIn} className="text-4xl" />
+                <LinkedIn style={{ fontSize: "45px" }} />
               </a>
               <a
                 href="mailto:homedez4u@gmail.com"
@@ -32,7 +30,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FontAwesomeIcon icon={faEnvelope} className="text-4xl" />
+                <Email style={{ fontSize: "45px" }} />
               </a>
             </div>
           </div>

@@ -40,12 +40,20 @@ const Testimonials = () => {
         className="testimonial"
         style={{ display: "flex", justifyContent: "center", marginTop: 50 }}
       >
-        <div className="md:w-1/2 w-11/12 text-center">
+        <div className="md:w-1/2 w-11/12 text-center hidden md:block">
           <Slider
             prevArrow={<PreviousBtn />}
             nextArrow={<NextBtn />}
             {...settings}
           >
+            {TestData.map((dat, i) => {
+              return <TestCard data={dat} key={i} />;
+            })}
+          </Slider>
+        </div>
+
+        <div className="md:w-1/2 w-11/12 text-center md:hidden">
+          <Slider {...settings}>
             {TestData.map((dat, i) => {
               return <TestCard data={dat} key={i} />;
             })}
