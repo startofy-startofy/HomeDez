@@ -28,6 +28,26 @@ import b27 from "../assets/gallery/Bedroom_Top/27.jpg"
 import b28 from "../assets/gallery/Bedroom_Top/28.jpg"
 import b29 from "../assets/gallery/Bedroom_Top/29.jpg"
 import b30 from "../assets/gallery/Bedroom_Top/30.jpg"
+import b31 from "../assets/gallery/Bedroom_Top/31.jpg"
+import b32 from "../assets/gallery/Bedroom_Top/32.jpg"
+import b33 from "../assets/gallery/Bedroom_Top/33.jpg"
+import b34 from "../assets/gallery/Bedroom_Top/34.jpg"
+import b35 from "../assets/gallery/Bedroom_Top/35.jpg"
+import b36 from "../assets/gallery/Bedroom_Top/36.jpg"
+import b37 from "../assets/gallery/Bedroom_Top/37.jpg"
+import b38 from "../assets/gallery/Bedroom_Top/38.jpg"
+import b39 from "../assets/gallery/Bedroom_Top/39.jpg"
+import b40 from "../assets/gallery/Bedroom_Top/40.jpg"
+import b41 from "../assets/gallery/Bedroom_Top/41.jpg"
+import b42 from "../assets/gallery/Bedroom_Top/42.jpg"
+import b43 from "../assets/gallery/Bedroom_Top/43.jpg"
+import b44 from "../assets/gallery/Bedroom_Top/44.jpg"
+import b45 from "../assets/gallery/Bedroom_Top/45.jpg"
+import b46 from "../assets/gallery/Bedroom_Top/46.jpg"
+import b47 from "../assets/gallery/Bedroom_Top/47.jpg"
+import b48 from "../assets/gallery/Bedroom_Top/48.jpg"
+import b49 from "../assets/gallery/Bedroom_Top/49.jpg"
+import b50 from "../assets/gallery/Bedroom_Top/50.jpg"
 
 import k1 from "../assets/gallery/Kitchen_Top/1.jpg"
 import k2 from "../assets/gallery/Kitchen_Top/2.jpg"
@@ -51,6 +71,11 @@ import k19 from "../assets/gallery/Kitchen_Top/19.jpg"
 import k20 from "../assets/gallery/Kitchen_Top/20.jpg"
 import k21 from "../assets/gallery/Kitchen_Top/21.jpg"
 import k22 from "../assets/gallery/Kitchen_Top/22.jpg"
+import k23 from "../assets/gallery/Kitchen_Top/23.jpg"
+import k24 from "../assets/gallery/Kitchen_Top/24.jpg"
+import k25 from "../assets/gallery/Kitchen_Top/25.jpg"
+import k26 from "../assets/gallery/Kitchen_Top/26.jpg"
+import k27 from "../assets/gallery/Kitchen_Top/27.jpg"
 
 import l1 from "../assets/gallery/Living_Top/1.jpg"
 import l2 from "../assets/gallery/Living_Top/2.jpg"
@@ -91,6 +116,24 @@ import l36 from "../assets/gallery/Living_Top/36.jpg"
 import l37 from "../assets/gallery/Living_Top/37.jpg"
 import l38 from "../assets/gallery/Living_Top/38.jpg"
 import l39 from "../assets/gallery/Living_Top/39.jpg"
+import l40 from "../assets/gallery/Living_Top/40.jpg"
+import l41 from "../assets/gallery/Living_Top/41.jpg"
+import l42 from "../assets/gallery/Living_Top/42.jpg"
+import l43 from "../assets/gallery/Living_Top/43.jpg"
+import l44 from "../assets/gallery/Living_Top/44.jpg"
+import l45 from "../assets/gallery/Living_Top/45.jpg"
+import l46 from "../assets/gallery/Living_Top/46.jpg"
+import l47 from "../assets/gallery/Living_Top/47.jpg"
+import l48 from "../assets/gallery/Living_Top/48.jpg"
+import l49 from "../assets/gallery/Living_Top/49.jpg"
+import l50 from "../assets/gallery/Living_Top/50.jpg"
+import l51 from "../assets/gallery/Living_Top/51.jpg"
+import l52 from "../assets/gallery/Living_Top/52.jpg"
+import l53 from "../assets/gallery/Living_Top/53.jpg"
+import l54 from "../assets/gallery/Living_Top/54.jpg"
+import l55 from "../assets/gallery/Living_Top/55.jpg"
+import l56 from "../assets/gallery/Living_Top/56.jpg"
+
 
 import p1 from "../assets/gallery/Pooja_Top/1.jpg"
 import p2 from "../assets/gallery/Pooja_Top/2.jpg"
@@ -102,6 +145,13 @@ import p7 from "../assets/gallery/Pooja_Top/7.jpg"
 import p8 from "../assets/gallery/Pooja_Top/8.jpg"
 import p9 from "../assets/gallery/Pooja_Top/9.jpg"
 import p10 from "../assets/gallery/Pooja_Top/10.jpg"
+import p11 from "../assets/gallery/Pooja_Top/11.jpg"
+import p12 from "../assets/gallery/Pooja_Top/12.jpg"
+import p13 from "../assets/gallery/Pooja_Top/13.jpg"
+import p14 from "../assets/gallery/Pooja_Top/14.jpg"
+import p15 from "../assets/gallery/Pooja_Top/15.jpg"
+import p16 from "../assets/gallery/Pooja_Top/16.jpg"
+import p17 from "../assets/gallery/Pooja_Top/17.jpg"
 
 import s1 from "../assets/gallery/Study_Top/1.jpg"
 import s2 from "../assets/gallery/Study_Top/2.jpg"
@@ -116,13 +166,13 @@ import s10 from "../assets/gallery/Study_Top/10.jpg"
 
 import t1 from "../assets/gallery/Terrace/1.jpg"
 
-const bedroom = [b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13, b14, b15, b16, b17, b18, b19, b20, b21, b22, b23, b24, b25, b26, b27, b28, b29, b30]
+const bedroom = [b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13, b14, b15, b16, b17, b18, b19, b20, b21, b22, b23, b24, b25, b26, b27, b28, b29, b30, b31, b32, b33, b34, b35, b36, b37, b38, b39, b40, b41, b42, b43, b44, b45, b46, b47, b48, b49, b50]
 
-const kitchen = [k1, k2, k3, k4, k5, k6, k7, k8, k9, k10, k11, k12, k13, k14, k15, k16, k17, k18, k19, k20, k21, k22]
+const kitchen = [k1, k2, k3, k4, k5, k6, k7, k8, k9, k10, k11, k12, k13, k14, k15, k16, k17, k18, k19, k20, k21, k22, k23, k24, k25, k26, k27]
 
-const living = [l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12, l13, l14, l15, l16, l17, l18, l19, l20, l21, l22, l23, l24, l25, l26, l27, l28, l29, l30, l31, l32, l33, l34, l35, l36, l37, l38, l39]
+const living = [l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12, l13, l14, l15, l16, l17, l18, l19, l20, l21, l22, l23, l24, l25, l26, l27, l28, l29, l30, l31, l32, l33, l34, l35, l36, l37, l38, l39, l40, l41, l42, l43, l44, l45, l46, l47, l48, l49, l50, l51, l52, l53, l54, l55, l56]
 
-const pooja = [p1, p2, p3, p4, p5, p6, p7, p8, p9, p10]
+const pooja = [p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17]
 
 const study = [s1, s2, s3, s4, s5, s6, s7, s8, s9, s10]
 
