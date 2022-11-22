@@ -22,7 +22,7 @@ const Home = () => {
             <p className="text-white text-lg pb-9">
               Make a best in class home with us that is fully customisable to
               your choice and made to fit in your cost expectations. We created
-              dream home interior for over 300 families, lets do it for you!
+              dream home interior for over 1000 families, lets do it for you!
             </p>
 
             <Link

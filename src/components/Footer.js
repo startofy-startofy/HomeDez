@@ -17,7 +17,7 @@ const Footer = () => {
                 <Instagram style={{ fontSize: "45px" }} />
               </a>
               <a
-                href="https://www.linkedin.com/company/homedezinteriors/"
+                href="https://www.linkedin.com/company/homedez-interiors/"
                 className="pr-10 hover:text-[#facf30]"
                 target="_blank"
                 rel="noopener noreferrer"

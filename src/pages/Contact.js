@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { NotificationManager } from "react-notifications";
+import { NearMe } from "@material-ui/icons";
 
 const Contact = React.forwardRef((props, ref) => {
   const [name, setName] = useState();
@@ -68,6 +69,18 @@ const Contact = React.forwardRef((props, ref) => {
                   </a>{" "}
                 </span>{" "}
               </h1>
+              <div className="text-xl text-gray-700 mt-8">
+                
+                <a
+                  href="contact"
+                  className="ml-3 py-3 text-xl px-5 rounded-xl bg-[#facf30] font-bold cursor-pointer"
+                >
+                  Location
+                  <span className="ml-1">
+                    <NearMe style={{ fontSize: "35px" }} />
+                  </span>
+                </a>
+              </div>
             </div>
             <div className="mt-8 text-center">
               <svg
@@ -1075,7 +1088,7 @@ const Contact = React.forwardRef((props, ref) => {
               <div className="mt-8">
                 <button
                   type="submit"
-                  className="uppercase text-sm font-bold tracking-wide bg-[#facf30] hover:bg-[#ffb53f] text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline"
+                  className="uppercase text-sm font-bold tracking-wide bg-[#facf30] hover:bg-[#ffb53f]  p-3 rounded-lg w-full focus:outline-none focus:shadow-outline"
                 >
                   Send Message
                 </button>
