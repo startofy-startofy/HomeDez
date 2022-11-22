@@ -72,8 +72,10 @@ const Contact = React.forwardRef((props, ref) => {
               <div className="text-xl text-gray-700 mt-8">
                 
                 <a
-                  href="contact"
+                  href="https://goo.gl/maps/K6mnv27tYendKEyF7"
                   className="ml-3 py-3 text-xl px-5 rounded-xl bg-[#facf30] font-bold cursor-pointer"
+                  target="_blank"
+                rel="noopener noreferrer"
                 >
                   Location
                   <span className="ml-1">
@@ -1101,6 +1103,7 @@ const Contact = React.forwardRef((props, ref) => {
             </form>
           </div>
         </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3885.994308965855!2d77.5759834!3d13.0995469!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae195167af7a33%3A0xf4880bbca3d1af81!2sHomeDez%20Interior%20and%20Decor!5e0!3m2!1sen!2sin!4v1669136443855!5m2!1sen!2sin" width="100%" height="500" style={{"border":0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="HomeDez"></iframe>
       </div>
     </>
   );

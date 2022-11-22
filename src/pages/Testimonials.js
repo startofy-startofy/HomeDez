@@ -5,7 +5,6 @@ import { ArrowBackIos, ArrowForwardIos } from "@material-ui/icons";
 import TestData from "../data/TestimonialsData";
 
 const PreviousBtn = (props) => {
-  console.log(props);
   const { className, onClick } = props;
   return (
     <div className={className} onClick={onClick}>
