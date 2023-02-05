@@ -9,7 +9,7 @@ const Contact = React.forwardRef((props, ref) => {
   const [message, setMessage] = useState();
   const [phone, setPhone] = useState();
   const [status, setStatus] = useState(false);
-  const url = "https://homedez.herokuapp.com";
+  const url = "https://homedez-backend.onrender.com";
   const submitForm = (e) => {
     e.preventDefault();
     const dat = {
