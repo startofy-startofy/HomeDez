@@ -69,6 +69,15 @@ const Contact = React.forwardRef((props, ref) => {
                   </a>{" "}
                 </span>{" "}
               </h1>
+              <h1 className="text-lg pt-6">
+                Phone -{" "}
+                <span className="text-2xl">
+                  {" "}
+                  <a href="tel:+918035711842" className="underline">
+                    +91 8035711842
+                  </a>{" "}
+                </span>{" "}
+              </h1>
               <div className="text-xl text-gray-700 mt-8">
                 
                 <a
